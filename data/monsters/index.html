@@ -1,0 +1,9214 @@
+
+<!doctype html>
+<html lang="ja" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="2D自動探索ハクスラRPG「Crownfall」の世界観・攻略・データ事典（現行バージョン準拠）">
+      
+      
+      
+        <link rel="canonical" href="https://crownfall-game.github.io/data/monsters/">
+      
+      
+        <link rel="prev" href="../../guide/equipment/">
+      
+      
+        <link rel="next" href="../weapons/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>モンスター図鑑 - Crownfall 攻略Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans JP";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="amber" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          コンテンツにスキップ
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="ヘッダー">
+    <a href="../.." title="Crownfall 攻略Wiki" class="md-header__button md-logo" aria-label="Crownfall 攻略Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 16 3 5l5.5 5L12 4l3.5 6L21 5l-2 11zm14 3c0 .6-.4 1-1 1H6c-.6 0-1-.4-1-1v-1h14z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Crownfall 攻略Wiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              モンスター図鑑
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="amber" data-md-color-accent="deep-orange"  aria-label="ライトモードへ"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="ライトモードへ" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="brown" data-md-color-accent="deep-orange"  aria-label="ダークモードへ"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="ダークモードへ" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="検索">
+        
+        <button type="reset" class="md-search__icon md-icon" title="クリア" aria-label="クリア" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            検索を初期化
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/JeflyMarte/crownfall" title="リポジトリへ" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    crownfall
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="タブ" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  ホーム
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../guide/what-is/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  プレイヤー向け
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../guide/getting-started/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  攻略
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+    
+  
+  データ
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../world/overview/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  世界観
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="ナビゲーション" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Crownfall 攻略Wiki" class="md-nav__button md-logo" aria-label="Crownfall 攻略Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 16 3 5l5.5 5L12 4l3.5 6L21 5l-2 11zm14 3c0 .6-.4 1-1 1H6c-.6 0-1-.4-1-1v-1h14z"/></svg>
+
+    </a>
+    Crownfall 攻略Wiki
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/JeflyMarte/crownfall" title="リポジトリへ" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    crownfall
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ホーム
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    プレイヤー向け
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    プレイヤー向け
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/what-is/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    どんなゲーム？
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    よくある質問
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/beginner/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    初心者向けガイド
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/power-up/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    キャラを強くするには
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/farming/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    稼ぎ方
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/gacha/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    招待状（ガチャ）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/pets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    オトモ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/tier/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    キャラTierランク
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/threats/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    要注意敵
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/bosses/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Boss攻略まとめ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/wandering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    放浪敵一覧
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/hard-nightmare/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hard／Nightmare
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/builds/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ビルド例
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/recommended-gear/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    おすすめ装備
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/glossary-player/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    用語集（プレイヤー版）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/ui-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UI案内
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    更新履歴
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    攻略
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    攻略
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/getting-started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    はじめに
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/hub/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    拠点ガイド
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/progression/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    進行とダンジョン
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/mourngate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    モーンゲート攻略
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/whisperwood/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ウィスパーウッド攻略
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/mistfen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ミストフェン攻略
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/blackshore/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ブラックショア攻略
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/frostridge/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    フロストリッジ攻略
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/events/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    イベントダンジョン
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/abyss/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    深層攻略
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/combat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    戦闘の仕組み
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/elements/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    属性と状態異常
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/equipment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    装備と鍛冶
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    データ
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    データ
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    モンスター図鑑
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    モンスター図鑑
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#abyssal_squid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ヴォイドテンタクル
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#albark" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        白甲の古龍アルバーク
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anchor_lord" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        アンカーロード
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#black_tide_shark" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ドレッドジョー
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#blood_bloom" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ブラッドブルーム
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#blood_leech" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        吸血ヒル
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bloom_serpent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ブルームサーペント
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bone_picker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        骨拾い
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chronos_wave" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        時環の共鳴龍クロノス・ウェーブ
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clock_moth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        クロックモス
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cosmic_duck" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        コズミックダック
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#crown_eater_rat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        冠喰いネズミ
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#crown_raven" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        宝冠レイヴン
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#crystal_hedgehog" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        水晶ハリネズミ
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#crystal_scorpion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        水晶スコーピオン
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dead_poison_frog" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        死毒の大蛙
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eldion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        始祖の竜 エルディオン
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forgedormient" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        星炉の寝主フォージ・ドルミエント
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#frost_claw_raptor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        霜爪ラプター
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#glacier_warden" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        氷晶マンモス
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#golden_scarab" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ゴールデンスカラベ
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#granvel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        フローラベア グランヴェル
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#grave_bell_bat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        墓鐘バット
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#great_claw" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        大爪刀
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#greios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        グレイオス
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ice_tail_fox" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        氷尾フォックス
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iron_horn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        鋭刀甲虫
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#karna_smoke" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        燼竜カルナ・スモーク
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#marsh_king" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        沼地の王
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mire_strider_spider" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        沼脚スパイダー
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mirror_boa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ミラーボア
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mist_mantis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ミストマンティス
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mist_wyvern" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        深霧ワイバーン
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moldgar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        底なしの王 モルドガル
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moss_boar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        モスボア
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moss_shell" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        モスシェル
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mycolga_ancient" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        霧沼の古茸ミコルガ
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nereion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        潮鳴王 ネレイオン
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nereion_depths" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        潮脈王ネレイオン・デプス
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nightfen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        夜沼
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ninja_octopus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        深海司祭
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#oldrex" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        オルドレクス
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#polar_tricera" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        極冠トリケラ
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rock_bison" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ロックバイソン
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rune_carcinos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ルーンカルキノス
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rune_roach" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ルーンローチ
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#samurai_fish" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ロイヤルシャーク
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sepia_hound" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        セピアハウンド
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#serdion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        水晶骸竜 セルディオン
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shadow_stalker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        影狩り
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ship_eater_crab" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        船喰らい
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#skarpedion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        鉄殻の長スカルペディオン
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#skull_turtle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        スカルタートル
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#skullface_mantis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        骸面マンティス
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spore_needle_wasp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        胞針ワスプ
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spore_widow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        スポアウィドウ
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#storm_joe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ストームジョー
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tide_lamp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        潮灯
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#undertaker_shark" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        アンダーテイカー
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#valgard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        境界の番ヴァルガード
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vergaron" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ヴェルガロン
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wind_ripper" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        スノーストーム
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../weapons/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    武器一覧
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../equipment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    防具・装飾品
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../jobs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ジョブ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../skills/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    スキル一覧
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dungeons/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ダンジョンデータ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    世界観
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    世界観
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../world/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    概要
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../world/history/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    歴史
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../world/characters/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    九王
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../world/heroes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    九英雄
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../world/geography/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    地理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../world/society/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    社会と派閥
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../world/guild/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    探索者ギルド
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../world/faith/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    信仰と死生観
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../world/legends/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    古代種と伝説個体
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../world/relics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    王遺産（遺物）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../world/fragments/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    断片ロア
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../world/glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    用語集
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#abyssal_squid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ヴォイドテンタクル
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#albark" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        白甲の古龍アルバーク
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anchor_lord" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        アンカーロード
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#black_tide_shark" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ドレッドジョー
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#blood_bloom" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ブラッドブルーム
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#blood_leech" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        吸血ヒル
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bloom_serpent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ブルームサーペント
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bone_picker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        骨拾い
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chronos_wave" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        時環の共鳴龍クロノス・ウェーブ
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clock_moth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        クロックモス
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cosmic_duck" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        コズミックダック
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#crown_eater_rat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        冠喰いネズミ
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#crown_raven" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        宝冠レイヴン
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#crystal_hedgehog" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        水晶ハリネズミ
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#crystal_scorpion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        水晶スコーピオン
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dead_poison_frog" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        死毒の大蛙
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eldion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        始祖の竜 エルディオン
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forgedormient" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        星炉の寝主フォージ・ドルミエント
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#frost_claw_raptor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        霜爪ラプター
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#glacier_warden" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        氷晶マンモス
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#golden_scarab" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ゴールデンスカラベ
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#granvel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        フローラベア グランヴェル
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#grave_bell_bat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        墓鐘バット
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#great_claw" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        大爪刀
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#greios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        グレイオス
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ice_tail_fox" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        氷尾フォックス
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iron_horn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        鋭刀甲虫
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#karna_smoke" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        燼竜カルナ・スモーク
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#marsh_king" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        沼地の王
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mire_strider_spider" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        沼脚スパイダー
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mirror_boa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ミラーボア
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mist_mantis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ミストマンティス
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mist_wyvern" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        深霧ワイバーン
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moldgar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        底なしの王 モルドガル
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moss_boar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        モスボア
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moss_shell" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        モスシェル
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mycolga_ancient" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        霧沼の古茸ミコルガ
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nereion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        潮鳴王 ネレイオン
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nereion_depths" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        潮脈王ネレイオン・デプス
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nightfen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        夜沼
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ninja_octopus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        深海司祭
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#oldrex" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        オルドレクス
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#polar_tricera" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        極冠トリケラ
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rock_bison" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ロックバイソン
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rune_carcinos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ルーンカルキノス
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rune_roach" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ルーンローチ
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#samurai_fish" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ロイヤルシャーク
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sepia_hound" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        セピアハウンド
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#serdion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        水晶骸竜 セルディオン
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shadow_stalker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        影狩り
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ship_eater_crab" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        船喰らい
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#skarpedion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        鉄殻の長スカルペディオン
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#skull_turtle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        スカルタートル
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#skullface_mantis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        骸面マンティス
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spore_needle_wasp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        胞針ワスプ
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spore_widow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        スポアウィドウ
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#storm_joe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ストームジョー
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tide_lamp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        潮灯
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#undertaker_shark" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        アンダーテイカー
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#valgard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        境界の番ヴァルガード
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vergaron" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ヴェルガロン
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wind_ripper" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        スノーストーム
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="_1">モンスター図鑑<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p>出現する生物・遺存体の一覧。弱点属性は与ダメージ <strong>×1.25</strong>、耐性属性は <strong>×0.75</strong>（<a href="../../guide/elements/">属性と状態異常</a>）。</p>
+<div class="admonition note">
+<p class="admonition-title">数値について</p>
+<p>表の HP・攻撃はリソース上の基礎値。Hard／Nightmare・深層では敵レベル補正が乗ります。
+スキル名は <code>skill_ids</code> の現行データ。詳細倍率は<a href="../skills/">スキル一覧</a>。</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>モンスター</th>
+<th>種別</th>
+<th style="text-align: right;">HP</th>
+<th style="text-align: right;">攻撃</th>
+<th>弱点</th>
+<th>危険度</th>
+<th>生息地</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#abyssal_squid">ヴォイドテンタクル</a></td>
+<td>通常</td>
+<td style="text-align: right;">736</td>
+<td style="text-align: right;">152</td>
+<td>氷</td>
+<td>★★★★</td>
+<td>沈没航路・潮境の深み</td>
+</tr>
+<tr>
+<td><a href="#albark">白甲の古龍アルバーク</a></td>
+<td>ボス</td>
+<td style="text-align: right;">3840</td>
+<td style="text-align: right;">224</td>
+<td>炎</td>
+<td>★★★★★</td>
+<td>ノースリーチ・地図の余白</td>
+</tr>
+<tr>
+<td><a href="#anchor_lord">アンカーロード</a></td>
+<td>エリート</td>
+<td style="text-align: right;">1640</td>
+<td style="text-align: right;">216</td>
+<td>聖</td>
+<td>★★★★</td>
+<td>沈没航路・古防波堤</td>
+</tr>
+<tr>
+<td><a href="#black_tide_shark">ドレッドジョー</a></td>
+<td>通常</td>
+<td style="text-align: right;">520</td>
+<td style="text-align: right;">144</td>
+<td>聖</td>
+<td>★★</td>
+<td>沈没航路・黒潮の筋</td>
+</tr>
+<tr>
+<td><a href="#blood_bloom">ブラッドブルーム</a></td>
+<td>通常</td>
+<td style="text-align: right;">560</td>
+<td style="text-align: right;">144</td>
+<td>聖</td>
+<td>★★★</td>
+<td>囁きの森・胞子の湿原</td>
+</tr>
+<tr>
+<td><a href="#blood_leech">吸血ヒル</a></td>
+<td>通常</td>
+<td style="text-align: right;">560</td>
+<td style="text-align: right;">128</td>
+<td>電気</td>
+<td>★★★</td>
+<td>霧沼・腐水域</td>
+</tr>
+<tr>
+<td><a href="#bloom_serpent">ブルームサーペント</a></td>
+<td>通常</td>
+<td style="text-align: right;">648</td>
+<td style="text-align: right;">136</td>
+<td>炎</td>
+<td>★★</td>
+<td>囁きの森・花蔓帯</td>
+</tr>
+<tr>
+<td><a href="#bone_picker">骨拾い</a></td>
+<td>通常</td>
+<td style="text-align: right;">480</td>
+<td style="text-align: right;">136</td>
+<td>闇</td>
+<td>★★</td>
+<td>霧沼・腐水域の縁</td>
+</tr>
+<tr>
+<td><a href="#chronos_wave">時環の共鳴龍クロノス・ウェーブ</a></td>
+<td>ボス</td>
+<td style="text-align: right;">4200</td>
+<td style="text-align: right;">240</td>
+<td>電気 / 聖</td>
+<td>★★★★★</td>
+<td>モーンゲート未踏査層</td>
+</tr>
+<tr>
+<td><a href="#clock_moth">クロックモス</a></td>
+<td>エリート</td>
+<td style="text-align: right;">992</td>
+<td style="text-align: right;">140</td>
+<td>電気</td>
+<td>★★★</td>
+<td>封鎖監獄</td>
+</tr>
+<tr>
+<td><a href="#cosmic_duck">コズミックダック</a></td>
+<td>通常</td>
+<td style="text-align: right;">208</td>
+<td style="text-align: right;">56</td>
+<td>炎</td>
+<td>★</td>
+<td>エルダの裂け目（遍在）</td>
+</tr>
+<tr>
+<td><a href="#crown_eater_rat">冠喰いネズミ</a></td>
+<td>通常</td>
+<td style="text-align: right;">416</td>
+<td style="text-align: right;">88</td>
+<td>闇</td>
+<td>★</td>
+<td>忘れられた納骨堂</td>
+</tr>
+<tr>
+<td><a href="#crown_raven">宝冠レイヴン</a></td>
+<td>通常</td>
+<td style="text-align: right;">1080</td>
+<td style="text-align: right;">176</td>
+<td>電気</td>
+<td>★★★★</td>
+<td>旧王の葬列路（遍在）</td>
+</tr>
+<tr>
+<td><a href="#crystal_hedgehog">水晶ハリネズミ</a></td>
+<td>通常</td>
+<td style="text-align: right;">464</td>
+<td style="text-align: right;">112</td>
+<td>電気</td>
+<td>★★</td>
+<td>崩れた地下水路</td>
+</tr>
+<tr>
+<td><a href="#crystal_scorpion">水晶スコーピオン</a></td>
+<td>通常</td>
+<td style="text-align: right;">656</td>
+<td style="text-align: right;">88</td>
+<td>炎</td>
+<td>★★</td>
+<td>封鎖監獄・鉱脈裂け目</td>
+</tr>
+<tr>
+<td><a href="#dead_poison_frog">死毒の大蛙</a></td>
+<td>通常</td>
+<td style="text-align: right;">720</td>
+<td style="text-align: right;">144</td>
+<td>闇</td>
+<td>★★★</td>
+<td>霧沼・停滞池</td>
+</tr>
+<tr>
+<td><a href="#eldion">始祖の竜 エルディオン</a></td>
+<td>ボス</td>
+<td style="text-align: right;">2400</td>
+<td style="text-align: right;">168</td>
+<td>炎</td>
+<td>★★★★★</td>
+<td>最果て氷裂・氷河最深部</td>
+</tr>
+<tr>
+<td><a href="#forgedormient">星炉の寝主フォージ・ドルミエント</a></td>
+<td>ボス</td>
+<td style="text-align: right;">3280</td>
+<td style="text-align: right;">208</td>
+<td>氷 / 聖</td>
+<td>★★★★★</td>
+<td>レッドフォージ星炉廃坑</td>
+</tr>
+<tr>
+<td><a href="#frost_claw_raptor">霜爪ラプター</a></td>
+<td>通常</td>
+<td style="text-align: right;">560</td>
+<td style="text-align: right;">128</td>
+<td>炎</td>
+<td>★★★★</td>
+<td>最果て氷裂・雪原</td>
+</tr>
+<tr>
+<td><a href="#glacier_warden">氷晶マンモス</a></td>
+<td>通常</td>
+<td style="text-align: right;">960</td>
+<td style="text-align: right;">120</td>
+<td>炎</td>
+<td>★★★★</td>
+<td>最果て氷裂・氷河縁</td>
+</tr>
+<tr>
+<td><a href="#golden_scarab">ゴールデンスカラベ</a></td>
+<td>通常</td>
+<td style="text-align: right;">192</td>
+<td style="text-align: right;">48</td>
+<td>炎</td>
+<td>★</td>
+<td>鉱脈の裂け目（遍在）</td>
+</tr>
+<tr>
+<td><a href="#granvel">フローラベア グランヴェル</a></td>
+<td>ボス</td>
+<td style="text-align: right;">2560</td>
+<td style="text-align: right;">168</td>
+<td>炎</td>
+<td>★★★★★</td>
+<td>囁きの森・最深部</td>
+</tr>
+<tr>
+<td><a href="#grave_bell_bat">墓鐘バット</a></td>
+<td>通常</td>
+<td style="text-align: right;">400</td>
+<td style="text-align: right;">80</td>
+<td>電気</td>
+<td>★</td>
+<td>崩れた地下水路・旧霊廟区</td>
+</tr>
+<tr>
+<td><a href="#great_claw">大爪刀</a></td>
+<td>エリート</td>
+<td style="text-align: right;">1480</td>
+<td style="text-align: right;">232</td>
+<td>電気</td>
+<td>★★★★</td>
+<td>霧沼・沈没街道</td>
+</tr>
+<tr>
+<td><a href="#greios">グレイオス</a></td>
+<td>エリート</td>
+<td style="text-align: right;">1480</td>
+<td style="text-align: right;">232</td>
+<td>炎</td>
+<td>★★★</td>
+<td>最果て氷裂・裂け目上空</td>
+</tr>
+<tr>
+<td><a href="#ice_tail_fox">氷尾フォックス</a></td>
+<td>通常</td>
+<td style="text-align: right;">528</td>
+<td style="text-align: right;">136</td>
+<td>炎</td>
+<td>★★★</td>
+<td>最果て氷裂・白雪平原</td>
+</tr>
+<tr>
+<td><a href="#iron_horn">鋭刀甲虫</a></td>
+<td>通常</td>
+<td style="text-align: right;">656</td>
+<td style="text-align: right;">144</td>
+<td>電気</td>
+<td>★★</td>
+<td>囁きの森・林床</td>
+</tr>
+<tr>
+<td><a href="#karna_smoke">燼竜カルナ・スモーク</a></td>
+<td>ボス</td>
+<td style="text-align: right;">2720</td>
+<td style="text-align: right;">168</td>
+<td>氷 / 聖</td>
+<td>★★★★★</td>
+<td>サンダーピーク火口</td>
+</tr>
+<tr>
+<td><a href="#marsh_king">沼地の王</a></td>
+<td>通常</td>
+<td style="text-align: right;">920</td>
+<td style="text-align: right;">112</td>
+<td>炎</td>
+<td>★★★</td>
+<td>霧沼・軟泥帯</td>
+</tr>
+<tr>
+<td><a href="#mire_strider_spider">沼脚スパイダー</a></td>
+<td>通常</td>
+<td style="text-align: right;">640</td>
+<td style="text-align: right;">144</td>
+<td>電気</td>
+<td>★★★</td>
+<td>霧沼・停滞水面</td>
+</tr>
+<tr>
+<td><a href="#mirror_boa">ミラーボア</a></td>
+<td>エリート</td>
+<td style="text-align: right;">1240</td>
+<td style="text-align: right;">200</td>
+<td>炎</td>
+<td>★★★★</td>
+<td>囁きの森・薄暗い林床</td>
+</tr>
+<tr>
+<td><a href="#mist_mantis">ミストマンティス</a></td>
+<td>通常</td>
+<td style="text-align: right;">600</td>
+<td style="text-align: right;">152</td>
+<td>電気</td>
+<td>★★★</td>
+<td>霧沼・倒木帯</td>
+</tr>
+<tr>
+<td><a href="#mist_wyvern">深霧ワイバーン</a></td>
+<td>エリート</td>
+<td style="text-align: right;">1352</td>
+<td style="text-align: right;">216</td>
+<td>炎</td>
+<td>★★★★</td>
+<td>囁きの森・霧の谷</td>
+</tr>
+<tr>
+<td><a href="#moldgar">底なしの王 モルドガル</a></td>
+<td>ボス</td>
+<td style="text-align: right;">2400</td>
+<td style="text-align: right;">168</td>
+<td>電気 / 闇</td>
+<td>★★★★★</td>
+<td>霧沼・底なし泥塘</td>
+</tr>
+<tr>
+<td><a href="#moss_boar">モスボア</a></td>
+<td>通常</td>
+<td style="text-align: right;">600</td>
+<td style="text-align: right;">128</td>
+<td>炎</td>
+<td>★★</td>
+<td>囁きの森・林床</td>
+</tr>
+<tr>
+<td><a href="#moss_shell">モスシェル</a></td>
+<td>通常</td>
+<td style="text-align: right;">832</td>
+<td style="text-align: right;">96</td>
+<td>炎</td>
+<td>★★</td>
+<td>囁きの森・倒木帯</td>
+</tr>
+<tr>
+<td><a href="#mycolga_ancient">霧沼の古茸ミコルガ</a></td>
+<td>ボス</td>
+<td style="text-align: right;">2640</td>
+<td style="text-align: right;">160</td>
+<td>炎 / 電気</td>
+<td>★★★★★</td>
+<td>ミストフェン封緘書庫下</td>
+</tr>
+<tr>
+<td><a href="#nereion">潮鳴王 ネレイオン</a></td>
+<td>ボス</td>
+<td style="text-align: right;">2776</td>
+<td style="text-align: right;">184</td>
+<td>聖 / 氷</td>
+<td>★★★★★</td>
+<td>沈没航路・潮境の深み</td>
+</tr>
+<tr>
+<td><a href="#nereion_depths">潮脈王ネレイオン・デプス</a></td>
+<td>ボス</td>
+<td style="text-align: right;">3120</td>
+<td style="text-align: right;">200</td>
+<td>聖 / 氷</td>
+<td>★★★★★</td>
+<td>ブラックショア外洋沈没旗艦下</td>
+</tr>
+<tr>
+<td><a href="#nightfen">夜沼</a></td>
+<td>エリート</td>
+<td style="text-align: right;">1560</td>
+<td style="text-align: right;">224</td>
+<td>電気 / 炎</td>
+<td>★★★★</td>
+<td>霧沼・黒霧の深み</td>
+</tr>
+<tr>
+<td><a href="#ninja_octopus">深海司祭</a></td>
+<td>エリート</td>
+<td style="text-align: right;">1480</td>
+<td style="text-align: right;">232</td>
+<td>聖</td>
+<td>★★★★</td>
+<td>沈没航路・古防波堤</td>
+</tr>
+<tr>
+<td><a href="#oldrex">オルドレクス</a></td>
+<td>通常</td>
+<td style="text-align: right;">992</td>
+<td style="text-align: right;">112</td>
+<td>炎</td>
+<td>★★★★</td>
+<td>最果て氷裂・遺構帯</td>
+</tr>
+<tr>
+<td><a href="#polar_tricera">極冠トリケラ</a></td>
+<td>エリート</td>
+<td style="text-align: right;">1720</td>
+<td style="text-align: right;">240</td>
+<td>炎</td>
+<td>★★★★★</td>
+<td>最果て氷裂・極冠尾根</td>
+</tr>
+<tr>
+<td><a href="#rock_bison">ロックバイソン</a></td>
+<td>通常</td>
+<td style="text-align: right;">720</td>
+<td style="text-align: right;">118</td>
+<td>炎</td>
+<td>★★</td>
+<td>各地の岩場・廃都縁</td>
+</tr>
+<tr>
+<td><a href="#rune_carcinos">ルーンカルキノス</a></td>
+<td>通常</td>
+<td style="text-align: right;">784</td>
+<td style="text-align: right;">112</td>
+<td>炎</td>
+<td>★★★</td>
+<td>囁きの森・林床の水辺</td>
+</tr>
+<tr>
+<td><a href="#rune_roach">ルーンローチ</a></td>
+<td>通常</td>
+<td style="text-align: right;">688</td>
+<td style="text-align: right;">80</td>
+<td>炎</td>
+<td>★★</td>
+<td>王墓の回廊</td>
+</tr>
+<tr>
+<td><a href="#samurai_fish">ロイヤルシャーク</a></td>
+<td>通常</td>
+<td style="text-align: right;">672</td>
+<td style="text-align: right;">160</td>
+<td>聖</td>
+<td>★★★</td>
+<td>沈没航路・潮境</td>
+</tr>
+<tr>
+<td><a href="#sepia_hound">セピアハウンド</a></td>
+<td>通常</td>
+<td style="text-align: right;">520</td>
+<td style="text-align: right;">96</td>
+<td>闇</td>
+<td>★★</td>
+<td>崩れた地下水路</td>
+</tr>
+<tr>
+<td><a href="#serdion">水晶骸竜 セルディオン</a></td>
+<td>ボス</td>
+<td style="text-align: right;">2000</td>
+<td style="text-align: right;">120</td>
+<td>電気 / 闇</td>
+<td>★★★★★</td>
+<td>王座の深淵</td>
+</tr>
+<tr>
+<td><a href="#shadow_stalker">影狩り</a></td>
+<td>通常</td>
+<td style="text-align: right;">2270</td>
+<td style="text-align: right;">330</td>
+<td>聖</td>
+<td>★★★★★</td>
+<td>宵闇の獣道（遍在）</td>
+</tr>
+<tr>
+<td><a href="#ship_eater_crab">船喰らい</a></td>
+<td>通常</td>
+<td style="text-align: right;">608</td>
+<td style="text-align: right;">128</td>
+<td>氷</td>
+<td>★★★</td>
+<td>沈没航路・座礁船団</td>
+</tr>
+<tr>
+<td><a href="#skarpedion">鉄殻の長スカルペディオン</a></td>
+<td>ボス</td>
+<td style="text-align: right;">2560</td>
+<td style="text-align: right;">152</td>
+<td>電気 / 聖</td>
+<td>★★★★★</td>
+<td>レッドリッジ廃坑</td>
+</tr>
+<tr>
+<td><a href="#skull_turtle">スカルタートル</a></td>
+<td>通常</td>
+<td style="text-align: right;">952</td>
+<td style="text-align: right;">104</td>
+<td>氷</td>
+<td>★★★</td>
+<td>沈没航路・干潟</td>
+</tr>
+<tr>
+<td><a href="#skullface_mantis">骸面マンティス</a></td>
+<td>通常</td>
+<td style="text-align: right;">592</td>
+<td style="text-align: right;">128</td>
+<td>炎</td>
+<td>★★★</td>
+<td>王座の深淵連絡路</td>
+</tr>
+<tr>
+<td><a href="#spore_needle_wasp">胞針ワスプ</a></td>
+<td>通常</td>
+<td style="text-align: right;">544</td>
+<td style="text-align: right;">160</td>
+<td>電気 / 炎</td>
+<td>★★★★</td>
+<td>霧沼・瘴胞の樹冠</td>
+</tr>
+<tr>
+<td><a href="#spore_widow">スポアウィドウ</a></td>
+<td>通常</td>
+<td style="text-align: right;">520</td>
+<td style="text-align: right;">136</td>
+<td>聖</td>
+<td>★★★</td>
+<td>囁きの森・樹冠</td>
+</tr>
+<tr>
+<td><a href="#storm_joe">ストームジョー</a></td>
+<td>通常</td>
+<td style="text-align: right;">720</td>
+<td style="text-align: right;">152</td>
+<td>電気</td>
+<td>★★★★</td>
+<td>最果て氷裂・氷河縁</td>
+</tr>
+<tr>
+<td><a href="#tide_lamp">潮灯</a></td>
+<td>通常</td>
+<td style="text-align: right;">464</td>
+<td style="text-align: right;">128</td>
+<td>聖</td>
+<td>★★★</td>
+<td>沈没航路・夜の干潟</td>
+</tr>
+<tr>
+<td><a href="#undertaker_shark">アンダーテイカー</a></td>
+<td>通常</td>
+<td style="text-align: right;">544</td>
+<td style="text-align: right;">152</td>
+<td>聖</td>
+<td>★★★</td>
+<td>沈没航路・浅瀬</td>
+</tr>
+<tr>
+<td><a href="#valgard">境界の番ヴァルガード</a></td>
+<td>ボス</td>
+<td style="text-align: right;">3600</td>
+<td style="text-align: right;">210</td>
+<td>聖 / 電気</td>
+<td>★★★★★</td>
+<td>ストームクラウン境界廊</td>
+</tr>
+<tr>
+<td><a href="#vergaron">ヴェルガロン</a></td>
+<td>通常</td>
+<td style="text-align: right;">624</td>
+<td style="text-align: right;">136</td>
+<td>炎</td>
+<td>★★★★</td>
+<td>最果て氷裂・吹雪帯</td>
+</tr>
+<tr>
+<td><a href="#wind_ripper">スノーストーム</a></td>
+<td>通常</td>
+<td style="text-align: right;">560</td>
+<td style="text-align: right;">160</td>
+<td>電気</td>
+<td>★★★★</td>
+<td>最果て氷裂・吹雪帯</td>
+</tr>
+</tbody>
+</table>
+<h2 id="abyssal_squid">ヴォイドテンタクル<a class="headerlink" href="#abyssal_squid" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>通常</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>頭足類</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★★★★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>736</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>152</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>56</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>8%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>氷</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>—</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>虚潮の巻縛 / 深淵噴墨</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>30%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>17</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>64</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>沈没航路・潮境の深み</td>
+</tr>
+<tr>
+<td>群れ</td>
+<td>2〜4 体</td>
+</tr>
+<tr>
+<td>被弾時付与</td>
+<td>mark (25%)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>頭足類を祖先とし、沈没旗艦の影で虚空の触腕を伸ばす深部種。通称ヴォイドテンタクル。墨ではなく濃い潮と虚ろな霧を吐き、標的を付けた獲物へ腕を集中させる。浅瀬の蛸より大型で、単独を好む。</p>
+</div>
+<h2 id="albark">白甲の古龍アルバーク<a class="headerlink" href="#albark" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>ボス</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>古代種</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>3840</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>224</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>240</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>0.9</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>炎</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>闇 / 電気</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>激昂 / 白静寂 / 地図なき突進</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>40%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>230</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>340</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>ノースリーチ・地図の余白</td>
+</tr>
+<tr>
+<td>被弾時付与</td>
+<td>chill (30%)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>白甲を持つ古龍種の頂点個体。地図の空白地帯を縄とし、氷と静寂で侵食者を消す。白甲の古龍の名は開拓者の俗称であり、開拓王との関わりは確認されていない。不死者ではない。</p>
+</div>
+<h2 id="anchor_lord">アンカーロード<a class="headerlink" href="#anchor_lord" title="Permanent link">&para;</a></h2>
+<p><img src="../../assets/monsters/ART_ENM_AnchorLord.png" alt="アンカーロード" width="280"></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>エリート</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>甲殻類</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★★★★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>1640</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>216</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>136</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>0.9</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>8%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>聖</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>氷</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>錨打ち / 錨鎖の薙ぎ払い</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>35%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>48</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>78</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>沈没航路・古防波堤</td>
+</tr>
+<tr>
+<td>被弾時付与</td>
+<td>stun (20%)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>ヤドカリを祖先とし、沈没船の錨そのものを殻にした巨種。錨の爪で岩礁を掴み、振り下ろせば防波堤の石が割れる。船乗りは錨の主と呼んで航路を避けた。</p>
+</div>
+<h2 id="black_tide_shark">ドレッドジョー<a class="headerlink" href="#black_tide_shark" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>通常</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>魚類</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>520</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>144</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>40</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>1.2</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>8%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>聖</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>—</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>戦慄の顎 / 黒潮寄せ</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>26%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>14</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>56</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>沈没航路・黒潮の筋</td>
+</tr>
+<tr>
+<td>群れ</td>
+<td>2〜4 体</td>
+</tr>
+<tr>
+<td>被弾時付与</td>
+<td>bleed (25%)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>サメを祖先とし、黒砂を巻く潮流に乗る沿岸種。通称ドレッドジョー。潮が変わる瞬間に群れで押し上げ、弱い獲物を選んで噛み裂く。アンダーテイカーより大きく、より集団的。</p>
+</div>
+<h2 id="blood_bloom">ブラッドブルーム<a class="headerlink" href="#blood_bloom" title="Permanent link">&para;</a></h2>
+<p><img src="../../assets/monsters/ART_ENM_BloodBloom.png" alt="ブラッドブルーム" width="280"></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>通常</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>菌植物</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★★★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>560</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>144</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>40</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>0.95</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>5%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>聖</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>—</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>血華の炸裂 / 血蔓打ち</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>26%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>12</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>44</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>囁きの森・胞子の湿原</td>
+</tr>
+<tr>
+<td>群れ</td>
+<td>2〜3 体</td>
+</tr>
+<tr>
+<td>被弾時付与</td>
+<td>bleed (25%)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>食虫植物を祖先とし、獲物の血液を養分に咲く巨大食虫花。花弁の内側に消化液を溜め、倒木の陰で獲物を待ち伏せする。傷口から血を吸い上げる棘状の蔓が記録されている。</p>
+</div>
+<h2 id="blood_leech">吸血ヒル<a class="headerlink" href="#blood_leech" title="Permanent link">&para;</a></h2>
+<p><img src="../../assets/monsters/ART_ENM_BloodLeech.png" alt="吸血ヒル" width="280"></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>通常</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>蠕虫類</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★★★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>560</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>128</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>32</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>1.2</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>5%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>電気</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>—</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>血吸いつき / 群吸血</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>26%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>12</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>46</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>霧沼・腐水域</td>
+</tr>
+<tr>
+<td>群れ</td>
+<td>2〜4 体</td>
+</tr>
+<tr>
+<td>被弾時付与</td>
+<td>bleed (25%)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>蛭を祖先とし、腐水に群れ棲む吸血種。獲物の体温と振動を感知して泥中から一斉に吸着する。剥がした痕は膿みやすく、探索者は帯電した刃で焼き切ることを覚えた。</p>
+</div>
+<h2 id="bloom_serpent">ブルームサーペント<a class="headerlink" href="#bloom_serpent" title="Permanent link">&para;</a></h2>
+<p><img src="../../assets/monsters/ART_ENM_BloomSerpent.png" alt="ブルームサーペント" width="280"></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>通常</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>爬虫類</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>648</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>136</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>40</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>5%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>炎</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>—</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>—</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>11</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>42</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>囁きの森・花蔓帯</td>
+</tr>
+<tr>
+<td>被弾時付与</td>
+<td>poison (25%)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>蛇を祖先とし、鱗が花弁状に変化した大蛇。開花に擬態して獲物を誘い、牙には麻痺性の植物毒を宿す。花期には鱗の彩度が上がる。</p>
+</div>
+<h2 id="bone_picker">骨拾い<a class="headerlink" href="#bone_picker" title="Permanent link">&para;</a></h2>
+<p><img src="../../assets/monsters/ART_ENM_BonePicker.png" alt="骨拾い" width="280"></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>通常</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>鳥類</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>480</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>136</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>24</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>1.25</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>8%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>闇</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>—</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>骨漁り / 骨投げ</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>24%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>11</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>42</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>霧沼・腐水域の縁</td>
+</tr>
+<tr>
+<td>群れ</td>
+<td>2〜4 体</td>
+</tr>
+<tr>
+<td>被弾時付与</td>
+<td>bleed (20%)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>腐肉食の鳥を祖先とし、沼縁の残骸を漁る拾荒種。嘴は骨を割り、弱った獲物の体温を嗅ぎ分ける。群れで舞い降り、傷のある探索者から先に襲う。</p>
+</div>
+<h2 id="chronos_wave">時環の共鳴龍クロノス・ウェーブ<a class="headerlink" href="#chronos_wave" title="Permanent link">&para;</a></h2>
+<p><img src="../../assets/monsters/ART_BOSS_ChronosWave.png" alt="時環の共鳴龍クロノス・ウェーブ" width="280"></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>ボス</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>古代種</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>4200</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>240</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>256</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>0.88</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>12%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>電気 / 聖</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>闇</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>激昂 / 時環共鳴 / 時環圧砕</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>45%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>240</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>360</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>モーンゲート未踏査層</td>
+</tr>
+<tr>
+<td>被弾時付与</td>
+<td>shock (25%)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>調時室の金属粉と歯車残滓を取り込み、鱗と時環を機械のように見せる古龍種の生存個体。体内の時環が同期するたび、踏む者の平衡と刻限感覚がずれる。時の王の名は後世の俗称であり、王との関わりは確認されていない。調時の針が何を測っていたかという伝承は継承と結びつけて語られるが、確証はない。不死者でも人形でもない。</p>
+</div>
+<h2 id="clock_moth">クロックモス<a class="headerlink" href="#clock_moth" title="Permanent link">&para;</a></h2>
+<p><img src="../../assets/monsters/ART_ENM_ClockMoth.png" alt="クロックモス" width="280"></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>エリート</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>昆虫類</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★★★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>992</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>140</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>64</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>1.1</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>電気</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>—</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>翅粉の一掃 / 時歪の共鳴</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>35%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>34</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>52</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>封鎖監獄</td>
+</tr>
+<tr>
+<td>被弾時付与</td>
+<td>stun (20%)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>蛾を祖先とし、封鎖監獄の遺構に営巣する大型個体。翅の鱗粉が金属粉を含み、歯車に似た紋様を成す。羽音の共鳴が平衡感覚を狂わせるため、地下で時間や方向の感覚が乱れるのはこの羽音のせいだと記録されている。怪奇ではない。営巣する監獄区画にはいまも時を刻み続ける機構があり、その針が指す時刻が何の基準なのかは判明していない。</p>
+</div>
+<p><strong>関連素材:</strong> 遺跡の結晶 / 王墓の欠片</p>
+<h2 id="cosmic_duck">コズミックダック<a class="headerlink" href="#cosmic_duck" title="Permanent link">&para;</a></h2>
+<p><img src="../../assets/monsters/ART_ENM_CosmicDuck.png" alt="コズミックダック" width="280"></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>通常</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>鳥類</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>208</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>56</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>16</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>2.0</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>5%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>炎</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>—</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>羽粉乱舞</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>28%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>100</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>10</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>エルダの裂け目（遍在）</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>エルダの偏りが濃い地点（裂け目）に寄る水鳥の適応型。探索者の足音に敏感で、接触後に成長効率の一時上昇が観測される。危害は小さいがすぐ逃げる。民間は異界と噂するが、記録部は自然現象として扱う。</p>
+</div>
+<h2 id="crown_eater_rat">冠喰いネズミ<a class="headerlink" href="#crown_eater_rat" title="Permanent link">&para;</a></h2>
+<p><img src="../../assets/monsters/ART_ENM_CrownEaterRat.png" alt="冠喰いネズミ" width="280"></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>通常</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>獣類</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>416</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>88</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>24</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>1.2</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>5%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>闇</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>—</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>宝冠ガジり / 群齧り</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>24%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>9</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>36</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>忘れられた納骨堂</td>
+</tr>
+<tr>
+<td>群れ</td>
+<td>2〜4 体</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>ネズミの類を祖先とする鉱物食性の害獣。忘れられた納骨堂に適応し、金属や宝石を選んで齧る。王族の装飾品を巣材に持ち込む習性があり、その胃石から失われた宝具の断片が見つかることもある。素早く隙を突くが臆病。胃石の金片には、本来別々の宝具のものでありながら同じ紋様を刻んだものが混じることがあり、なぜ一致するのかは説明されていない。</p>
+</div>
+<p><strong>関連素材:</strong> 遺跡の結晶 / 蒼古の骨鉱</p>
+<h2 id="crown_raven">宝冠レイヴン<a class="headerlink" href="#crown_raven" title="Permanent link">&para;</a></h2>
+<p><img src="../../assets/monsters/ART_ENM_CrownRaven.png" alt="宝冠レイヴン" width="280"></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>通常</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>鳥類</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★★★★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>1080</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>176</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>112</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>0.95</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>8%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>電気</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>—</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>破片叩きつけ</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>32%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>28</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>55</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>旧王の葬列路（遍在）</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>旧王の葬列路などに棲む烏の適応型。光る破片や武具の気配を集め、嘴や巣に蓄える。衔えた飾りが王冠に似ることから宝冠の名が付いた。攻撃的だが、倒せば銜えていた武具が落ちることがある。武具部は「レイヴンの羽＝幸運の拾得」と半ば迷信する。</p>
+</div>
+<h2 id="crystal_hedgehog">水晶ハリネズミ<a class="headerlink" href="#crystal_hedgehog" title="Permanent link">&para;</a></h2>
+<p><img src="../../assets/monsters/ART_ENM_CrystalHedgehog.png" alt="水晶ハリネズミ" width="280"></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>通常</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>獣類</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>464</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>112</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>40</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>8%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>電気</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>—</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>晶刺しの雨 / 晶砕爆散</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>25%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>11</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>24</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>崩れた地下水路</td>
+</tr>
+<tr>
+<td>群れ</td>
+<td>2〜4 体</td>
+</tr>
+<tr>
+<td>被弾時付与</td>
+<td>bleed (25%)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>ハリネズミを祖先とし、水路に溶けた鉱物を針へ蓄積して結晶化させる。危険を察すると結晶の針を一斉に射出して身を守る遠隔型。帯電しやすい結晶質ゆえか、放電を浴びると針ごと砕けやすい。単独を好む。針の芯には水路へ流れ込んだ遺物の微片が混じることがあり、結晶ごしに古い金属光を放つ個体も確認されている。</p>
+</div>
+<p><strong>関連素材:</strong> 遺跡の結晶 / 蒼古の骨鉱</p>
+<h2 id="crystal_scorpion">水晶スコーピオン<a class="headerlink" href="#crystal_scorpion" title="Permanent link">&para;</a></h2>
+<p><img src="../../assets/monsters/ART_ENM_CrystalScorpion.png" alt="水晶スコーピオン" width="280"></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>通常</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>昆虫類</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>656</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>88</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>72</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>0.95</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>4%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>炎</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>闇</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>晶毒針 / 晶尾薙ぎ</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>23%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>11</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>32</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>封鎖監獄・鉱脈裂け目</td>
+</tr>
+<tr>
+<td>群れ</td>
+<td>2〜4 体</td>
+</tr>
+<tr>
+<td>被弾時付与</td>
+<td>bleed (20%)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>サソリを祖先とし、溶け込んだ鉱水を尾棘へ蓄えて結晶化させる。甲殻は暗闇に溶け込み、獲物が近づくまで動かない。刺突は氷晶の破片を皮膚に残し、かつての王墓の回廊では「水晶の毒針」として忌避された。正面からの打撃を凌ぐが、炎で甲殻が急冷割れする。</p>
+</div>
+<p><strong>関連素材:</strong> 遺跡の結晶 / 蒼古の骨鉱</p>
+<h2 id="dead_poison_frog">死毒の大蛙<a class="headerlink" href="#dead_poison_frog" title="Permanent link">&para;</a></h2>
+<p><img src="../../assets/monsters/ART_ENM_DeadPoisonFrog.png" alt="死毒の大蛙" width="280"></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>通常</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>両生類</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★★★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>720</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>144</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>48</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>5%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>闇</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>—</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>沼毒の飛沫 / 死毒の舌</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>28%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>13</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>50</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>霧沼・停滞池</td>
+</tr>
+<tr>
+<td>被弾時付与</td>
+<td>poison (25%)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>蛙を祖先とし、腐植土の病原を毒腺に濃縮した大型種。膨らんだ鳴嚢から泡状の毒を散布する。沼毒は病であって呪いではない、と記録部は繰り返し注記している。</p>
+</div>
+<h2 id="eldion">始祖の竜 エルディオン<a class="headerlink" href="#eldion" title="Permanent link">&para;</a></h2>
+<p><img src="../../assets/monsters/ART_BOSS_Eldion.png" alt="始祖の竜 エルディオン" width="280"></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>ボス</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>古代種</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>2400</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>168</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>208</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>0.9</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>炎</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>闇 / 電気</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>激昂 / 氷河の吐息 / 氷裂の顎</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>40%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>210</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>300</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>最果て氷裂・氷河最深部</td>
+</tr>
+<tr>
+<td>被弾時付与</td>
+<td>chill (25%)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>竜を祖先とする古龍種の頂点個体。体内に氷河晶を宿し、吐息は空気ごと凍らせる。開拓王の名は後世の俗称であり、王との関わりは確認されていない。不死者ではない。</p>
+</div>
+<h2 id="forgedormient">星炉の寝主フォージ・ドルミエント<a class="headerlink" href="#forgedormient" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>ボス</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>古代種</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>3280</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>208</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>224</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>0.85</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>氷 / 聖</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>炎 / 闇</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>激昂 / スラグの吐息 / 炉床震動</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>40%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>210</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>310</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>レッドフォージ星炉廃坑</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>星炉の残熱に潜む熔岩生物の古型。炉心で眠り、起こされると炉床ごと揺れる。星炉の寝主は坑夫の俗称であり、王そのものではない。不死者ではない。</p>
+</div>
+<h2 id="frost_claw_raptor">霜爪ラプター<a class="headerlink" href="#frost_claw_raptor" title="Permanent link">&para;</a></h2>
+<p><img src="../../assets/monsters/ART_ENM_FrostClawRaptor.png" alt="霜爪ラプター" width="280"></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>通常</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>爬虫類</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★★★★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>560</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>128</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>48</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>1.2</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>炎</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>—</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>骸面斬り / 霜爪薙ぎ</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>30%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>18</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>70</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>最果て氷裂・雪原</td>
+</tr>
+<tr>
+<td>群れ</td>
+<td>2〜4 体</td>
+</tr>
+<tr>
+<td>被弾時付与</td>
+<td>bleed (25%)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>小型恐竜を祖先とし、氷刃状の鉤爪で雪面を駆ける群れ狩りの捕食者。弱った獲物を選び、三方向から同時に跳びかかる連携が観測されている。</p>
+</div>
+<h2 id="glacier_warden">氷晶マンモス<a class="headerlink" href="#glacier_warden" title="Permanent link">&para;</a></h2>
+<p><img src="../../assets/monsters/ART_ENM_GlacierWarden.png" alt="氷晶マンモス" width="280"></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>通常</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>獣類</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★★★★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>960</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>120</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>152</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>0.85</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>5%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>炎</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>氷</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>破片叩きつけ / 氷牙突き</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>28%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>20</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>74</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>最果て氷裂・氷河縁</td>
+</tr>
+<tr>
+<td>被弾時付与</td>
+<td>stun (25%)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>マンモスを祖先とし、氷河の割れ目に縄張りを張る大型種。肩から背へ氷晶の板を背負い、動かぬときは氷壁に擬態する。開拓者の境界標を守るように見えるが、王の使いではない。</p>
+</div>
+<h2 id="golden_scarab">ゴールデンスカラベ<a class="headerlink" href="#golden_scarab" title="Permanent link">&para;</a></h2>
+<p><img src="../../assets/monsters/ART_ENM_GoldenScarab.png" alt="ゴールデンスカラベ" width="280"></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>通常</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>昆虫類</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>192</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>48</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>24</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>1.8</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>5%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>炎</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>—</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>金粉散らし</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>22%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>15</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>220</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>鉱脈の裂け目（遍在）</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>外殻に砂金とエルダ微粒子が沈着した甲虫の適応型。警戒心が強く、接触後すぐに巣穴へ逃げる。撃退すれば殻に溜まった金砂を回収できるが、逃がすとほぼ得られない。武具部より会計が先に騒ぎ立てる種。</p>
+</div>
+<h2 id="granvel">フローラベア グランヴェル<a class="headerlink" href="#granvel" title="Permanent link">&para;</a></h2>
+<p><img src="../../assets/monsters/ART_BOSS_Granvel.png" alt="フローラベア グランヴェル" width="280"></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>ボス</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>古代種</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>2560</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>168</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>144</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>0.95</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>炎</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>闇</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>激昂 / 萌芽の波動 / 茨鉄の薙ぎ払い</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>40%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>160</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>210</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>囁きの森・最深部</td>
+</tr>
+<tr>
+<td>被弾時付与</td>
+<td>bleed (20%)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>古代巨熊を祖先とし、森そのものと共生一体化した頂点捕食者。体表から根と蔓が伸び、傷は周囲の植生から養分を得て塞がる。討伐には森の再生より速い火力が要ると記録されている。</p>
+</div>
+<h2 id="grave_bell_bat">墓鐘バット<a class="headerlink" href="#grave_bell_bat" title="Permanent link">&para;</a></h2>
+<p><img src="../../assets/monsters/ART_ENM_GraveBellBat.png" alt="墓鐘バット" width="280"></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>通常</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>獣類</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>400</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>80</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>16</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>1.25</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>6%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>電気</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>—</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>墓鐘鳴鏡 / 墓陰の急襲</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>26%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>8</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>28</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>崩れた地下水路・旧霊廟区</td>
+</tr>
+<tr>
+<td>群れ</td>
+<td>2〜4 体</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>コウモリを祖先とし、王都崩落後の霊廟区に巣を構えた巨大種。胸骨が中空の鐘腔を持ち、羽音と共鳴して低い鳴りを響かせる。この鳴動は探索者の平衡感覚を乱し、古い埋葬記録によれば「鐘が呼ぶ前に跪け」と戒められている。単独で後方から襲い、明るい炎と雷光を嫌う。</p>
+</div>
+<p><strong>関連素材:</strong> 遺跡の結晶 / 蒼古の骨鉱</p>
+<h2 id="great_claw">大爪刀<a class="headerlink" href="#great_claw" title="Permanent link">&para;</a></h2>
+<p><img src="../../assets/monsters/ART_ENM_GreatClaw.png" alt="大爪刀" width="280"></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>エリート</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>甲殻類</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★★★★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>1480</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>232</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>96</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>電気</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>氷</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>大爪の断頭刃 / 連爪の薙ぎ</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>35%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>42</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>66</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>霧沼・沈没街道</td>
+</tr>
+<tr>
+<td>被弾時付与</td>
+<td>bleed (25%)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>蟹を祖先とし、沈没封緘区の封印蝋と泥を甲羅に纏った巨蟹。刃状に研がれた大爪は石畳ごと獲物を両断する。蝋の紋様が何かの封印文と一致するのかは確認されていない。</p>
+</div>
+<h2 id="greios">グレイオス<a class="headerlink" href="#greios" title="Permanent link">&para;</a></h2>
+<p><img src="../../assets/monsters/ART_ENM_Greios.png" alt="グレイオス" width="280"></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>エリート</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>爬虫類</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★★★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>1480</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>232</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>112</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>1.05</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>炎</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>電気</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>鱗粉の白嵐 / 氷翼の槍突</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>35%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>50</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>86</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>最果て氷裂・裂け目上空</td>
+</tr>
+<tr>
+<td>被弾時付与</td>
+<td>chill (30%)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>翼竜を祖先とし、吹雪に紛れて滑空する。翼の鱗粉が視界を奪い、次の瞬間には後衛が空へ攫われている。氷裂の探索者が最も恐れる影である。</p>
+</div>
+<h2 id="ice_tail_fox">氷尾フォックス<a class="headerlink" href="#ice_tail_fox" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>通常</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>獣類</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★★★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>528</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>136</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>40</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>1.25</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>炎</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>—</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>—</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>17</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>68</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>最果て氷裂・白雪平原</td>
+</tr>
+<tr>
+<td>群れ</td>
+<td>2〜4 体</td>
+</tr>
+<tr>
+<td>被弾時付与</td>
+<td>chill (25%)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>狐を祖先とし、尾に霜柱を蓄える寒地種。雪面を軽く走り、尾の一撃で体温を奪う。ヴェルガロンの群れの縁をうろつき、弱った獲物を横取りする。</p>
+</div>
+<h2 id="iron_horn">鋭刀甲虫<a class="headerlink" href="#iron_horn" title="Permanent link">&para;</a></h2>
+<p><img src="../../assets/monsters/ART_ENM_IronHorn.png" alt="鋭刀甲虫" width="280"></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>通常</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>昆虫類</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>656</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>144</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>48</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>1.05</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>6%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>電気</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>—</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>鋭刀の角突 / 鉄角薙ぎ</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>24%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>11</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>40</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>囁きの森・林床</td>
+</tr>
+<tr>
+<td>群れ</td>
+<td>2〜3 体</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>甲虫を祖先とし、頭部の角を刃のように研ぎ澄ました突撃型。硬い角で正面から切り込み、倒木の間を力任せに突進する。苔擬態種より好戦的で、群れより単独の直進突撃を好む。</p>
+</div>
+<h2 id="karna_smoke">燼竜カルナ・スモーク<a class="headerlink" href="#karna_smoke" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>ボス</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>古代種</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>2720</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>168</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>160</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>0.95</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>氷 / 聖</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>炎</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>激昂 / 灰の帳 / 溶岩槍</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>40%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>185</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>270</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>サンダーピーク火口</td>
+</tr>
+<tr>
+<td>被弾時付与</td>
+<td>bleed (20%)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>燼竜を祖先とする火口頂の古生物。灰雲に身を隠し、溶岩の槍を吐く。燼竜の名は猟師の俗称であり、王そのものではない。不死者ではない。</p>
+</div>
+<h2 id="marsh_king">沼地の王<a class="headerlink" href="#marsh_king" title="Permanent link">&para;</a></h2>
+<p><img src="../../assets/monsters/ART_ENM_MarshKing.png" alt="沼地の王" width="280"></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>通常</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>両生類</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★★★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>920</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>112</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>96</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>0.85</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>5%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>炎</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>—</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>沼毒の飛沫 / 沼王の顎</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>25%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>14</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>54</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>霧沼・軟泥帯</td>
+</tr>
+<tr>
+<td>群れ</td>
+<td>2〜4 体</td>
+</tr>
+<tr>
+<td>被弾時付与</td>
+<td>poison (20%)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>オオサンショウウオを祖先とし、腐植泥そのものに擬態する巨大両生類。動かぬこと数日、獲物が踏み込んだ瞬間だけ泥ごと呑み込む。土地の古い呼び名から沼の小さな王と綽名された。</p>
+</div>
+<h2 id="mire_strider_spider">沼脚スパイダー<a class="headerlink" href="#mire_strider_spider" title="Permanent link">&para;</a></h2>
+<p><img src="../../assets/monsters/ART_ENM_MireStriderSpider.png" alt="沼脚スパイダー" width="280"></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>通常</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>昆虫類</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★★★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>640</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>144</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>48</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>1.05</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>6%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>電気</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>—</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>沼糸の絡め / 沼牙</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>26%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>13</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>48</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>霧沼・停滞水面</td>
+</tr>
+<tr>
+<td>群れ</td>
+<td>2〜3 体</td>
+</tr>
+<tr>
+<td>被弾時付与</td>
+<td>poison (20%)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>蜘蛛を祖先とし、脚先の細毛と油膜で水面張力を渡る巨大種。静かな水面を歩いて接近し、泥底へ引きずり込む。波紋だけが気配となる。</p>
+</div>
+<h2 id="mirror_boa">ミラーボア<a class="headerlink" href="#mirror_boa" title="Permanent link">&para;</a></h2>
+<p><img src="../../assets/monsters/ART_ENM_MirrorBoa.png" alt="ミラーボア" width="280"></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>エリート</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>爬虫類</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★★★★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>1240</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>200</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>64</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>12%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>炎</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>—</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>鏡鱗の牙 / 鏡鱗の眩光</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>35%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>34</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>56</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>囁きの森・薄暗い林床</td>
+</tr>
+<tr>
+<td>被弾時付与</td>
+<td>poison (22%)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>大蛇を祖先とし、鱗が鏡のように光を反射する大型個体。薄暗い林床で姿をくらませ、後列を狙って毒牙を打ち込む。鱗の反射角が変わると一瞬だけ本体の位置が読めなくなると報告されている。</p>
+</div>
+<h2 id="mist_mantis">ミストマンティス<a class="headerlink" href="#mist_mantis" title="Permanent link">&para;</a></h2>
+<p><img src="../../assets/monsters/ART_ENM_MistMantis.png" alt="ミストマンティス" width="280"></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>通常</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>昆虫類</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★★★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>600</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>152</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>40</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>1.1</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>電気</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>—</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>霧鎌斬り / 霧鎌薙ぎ</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>28%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>13</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>52</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>霧沼・倒木帯</td>
+</tr>
+<tr>
+<td>群れ</td>
+<td>2〜3 体</td>
+</tr>
+<tr>
+<td>被弾時付与</td>
+<td>poison (20%)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>カマキリを祖先とし、濃霧に紛れて待ち伏せる大型捕食者。鎌の内側に腐生菌の毒を宿し、霧の薄い日は狩りをしない。後衛から仕留める狡猾さが報告されている。</p>
+</div>
+<h2 id="mist_wyvern">深霧ワイバーン<a class="headerlink" href="#mist_wyvern" title="Permanent link">&para;</a></h2>
+<p><img src="../../assets/monsters/ART_ENM_MistWyvern.png" alt="深霧ワイバーン" width="280"></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>エリート</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>竜類</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★★★★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>1352</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>216</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>72</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>1.05</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>炎</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>氷</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>凍霧の吐息 / 霧爪の一閃</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>35%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>36</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>58</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>囁きの森・霧の谷</td>
+</tr>
+<tr>
+<td>被弾時付与</td>
+<td>chill (20%)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>飛竜を祖先とし、翼膜に霧を凝結させる腺を持つ大型個体。自ら霧幕を張って接近し、冷気を帯びた爪撃で獲物の動きを鈍らせる。霧の濃い日は行動圏が広がる。</p>
+</div>
+<h2 id="moldgar">底なしの王 モルドガル<a class="headerlink" href="#moldgar" title="Permanent link">&para;</a></h2>
+<p><img src="../../assets/monsters/ART_BOSS_Moldgar.png" alt="底なしの王 モルドガル" width="280"></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>ボス</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>古代種</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>2400</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>168</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>160</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>0.95</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>電気 / 闇</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>闇</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>激昂 / 底なしの顎 / 深淵の泥濤</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>40%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>170</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>230</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>霧沼・底なし泥塘</td>
+</tr>
+<tr>
+<td>被弾時付与</td>
+<td>poison (20%)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>ワニを祖先とする古代型の頂点捕食者。沈没書庫跡を縄張りとし、腐生環境に完全適応した。底なしと呼ばれる泥塘の主だが不死者ではない。呑み込んだ書庫の錠前が腹中から見つかった例があり、何を封じた錠だったのかは判明していない。</p>
+</div>
+<h2 id="moss_boar">モスボア<a class="headerlink" href="#moss_boar" title="Permanent link">&para;</a></h2>
+<p><img src="../../assets/monsters/ART_ENM_MossBoar.png" alt="モスボア" width="280"></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>通常</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>獣類</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>600</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>128</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>32</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>1.15</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>5%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>炎</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>—</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>苔猪の突進 / 苔牙突き</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>22%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>10</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>38</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>囁きの森・林床</td>
+</tr>
+<tr>
+<td>群れ</td>
+<td>2〜4 体</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>猪を祖先とし、背に厚い苔と地衣を共生させた森猪。苔層は外傷と日射を防ぐ生きた鎧であり、群れで直進する突進は倒木ごと下生えを砕く。</p>
+</div>
+<h2 id="moss_shell">モスシェル<a class="headerlink" href="#moss_shell" title="Permanent link">&para;</a></h2>
+<p><img src="../../assets/monsters/ART_ENM_MossShell.png" alt="モスシェル" width="280"></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>通常</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>昆虫類</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>832</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>96</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>96</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>0.85</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>炎</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>—</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>苔殻打ち / 苔棘張り</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>22%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>11</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>40</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>囁きの森・倒木帯</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>甲虫を祖先とし、外殻表面に苔を育てて擬態する硬殻種。静止時は苔むした岩と見分けがつかない。殻は刃を滑らせるが、乾燥と炎に極端に弱い。</p>
+</div>
+<h2 id="mycolga_ancient">霧沼の古茸ミコルガ<a class="headerlink" href="#mycolga_ancient" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>ボス</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>古代種</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>2640</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>160</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>160</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>0.9</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>炎 / 電気</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>闇</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>激昂 / 胞子の野 / 根縛</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>40%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>180</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>260</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>ミストフェン封緘書庫下</td>
+</tr>
+<tr>
+<td>被弾時付与</td>
+<td>poison (25%)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>古菌類と湿地植物の共生体。封緘書庫の腐敗空気に適応し、根と胞子で通路を塞ぐ。霧沼の古茸と呼ばれるが王名ではなく、学識王との関わりも確認されていない。不死者ではない。</p>
+</div>
+<h2 id="nereion">潮鳴王 ネレイオン<a class="headerlink" href="#nereion" title="Permanent link">&para;</a></h2>
+<p><img src="../../assets/monsters/ART_BOSS_Nereion.png" alt="潮鳴王 ネレイオン" width="280"></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>ボス</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>古代種</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>2776</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>184</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>176</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>0.9</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>聖 / 氷</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>炎</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>激昂 / 潮鳴りの慟哭 / ブリーチング</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>40%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>185</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>260</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>沈没航路・潮境の深み</td>
+</tr>
+<tr>
+<td>被弾時付与</td>
+<td>chill (20%)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>鯨を祖先とする潮境の巨鯨と、船骨に着生した潮藻の複合体。潮の満ち引きに合わせて低く鳴く声から、海統王の名を民間が付けた。王そのものではない、と記録部は明記している。</p>
+</div>
+<h2 id="nereion_depths">潮脈王ネレイオン・デプス<a class="headerlink" href="#nereion_depths" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>ボス</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>古代種</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>3120</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>200</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>192</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>0.9</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>聖 / 氷</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>炎</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>激昂 / 潮脈の引き寄せ / 外洋の慟哭</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>40%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>195</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>285</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>ブラックショア外洋沈没旗艦下</td>
+</tr>
+<tr>
+<td>被弾時付与</td>
+<td>chill (25%)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>潮境巨鯨と沈没旗艦骨に着生した潮藻の外洋深部型。旗艦の竜骨を縄とし潮脈を操る。潮脈王の名は海兵の通称で、海統王ネレイオンとは別個体と記録部は明記している。不死者ではない。</p>
+</div>
+<h2 id="nightfen">夜沼<a class="headerlink" href="#nightfen" title="Permanent link">&para;</a></h2>
+<p><img src="../../assets/monsters/ART_ENM_Nightfen.png" alt="夜沼" width="280"></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>エリート</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>古代種</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★★★★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>1560</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>224</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>112</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>0.95</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>12%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>電気 / 炎</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>闇</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>夜沼の呑込 / 夜霧の吸い取り</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>35%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>44</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>70</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>霧沼・黒霧の深み</td>
+</tr>
+<tr>
+<td>被弾時付与</td>
+<td>fear (20%)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>正体未詳の大型生物。濃霧の夜にだけ輪郭が立ち上がり、昼は泥塘の隆起と区別がつかない。記録部はワニでも両生類でもなく、複数の腐生種が群体化した可能性を残している。不死者ではない。</p>
+</div>
+<h2 id="ninja_octopus">深海司祭<a class="headerlink" href="#ninja_octopus" title="Permanent link">&para;</a></h2>
+<p><img src="../../assets/monsters/ART_ENM_NinjaOctopus.png" alt="深海司祭" width="280"></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>エリート</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>頭足類</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★★★★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>1480</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>232</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>104</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>聖</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>氷</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>墨煙の帳 / 触腕の鞭打ち</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>35%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>46</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>74</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>沈没航路・古防波堤</td>
+</tr>
+<tr>
+<td>被弾時付与</td>
+<td>mark (30%)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>蛸を祖先とし、防波堤の影に潜む大型の頭足類。煙幕のように墨を吐き、腕ごとに別の獲物を搦め捕る。深い潮の底で儀式めいた動きをする姿から、探索者が「深海司祭」と呼ぶ。</p>
+</div>
+<h2 id="oldrex">オルドレクス<a class="headerlink" href="#oldrex" title="Permanent link">&para;</a></h2>
+<p><img src="../../assets/monsters/ART_ENM_Oldrex.png" alt="オルドレクス" width="280"></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>通常</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>爬虫類</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★★★★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>992</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>112</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>160</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>0.85</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>5%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>炎</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>—</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>吹雪の咆哮 / 古龍踏</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>20%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>21</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>76</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>最果て氷裂・遺構帯</td>
+</tr>
+<tr>
+<td>被弾時付与</td>
+<td>stun (20%)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>大型恐竜を祖先とし、氷河期の遺構に似た甲殻状の鱗を持つ。氷柱の間で動かぬこと数日、縄張りに入った者だけを尾の一撃で打ち据える。</p>
+</div>
+<h2 id="polar_tricera">極冠トリケラ<a class="headerlink" href="#polar_tricera" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>エリート</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>爬虫類</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>1720</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>240</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>144</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>0.95</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>炎</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>氷</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>極冠の角撃</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>35%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>52</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>90</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>最果て氷裂・極冠尾根</td>
+</tr>
+<tr>
+<td>被弾時付与</td>
+<td>stun (25%)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>角竜を祖先とし、三本の角に永久氷を宿す極冠の巨種。頭盾は氷河の断面に似て、突進は尾根の雪を割る。グレイオスが空を支配するなら、地を踏む影はこの角竜だと猟師は言う。</p>
+</div>
+<h2 id="rock_bison">ロックバイソン<a class="headerlink" href="#rock_bison" title="Permanent link">&para;</a></h2>
+<p><img src="../../assets/monsters/ART_ENM_RockBison.png" alt="ロックバイソン" width="280"></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>通常</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>獣類</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>720</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>118</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>58</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>0.95</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>4%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>炎</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>—</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>—</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>12</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>42</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>各地の岩場・廃都縁</td>
+</tr>
+<tr>
+<td>群れ</td>
+<td>1〜2 体</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>野牛を祖先とし、角と肩甲に鉱物が沈着した岩化種。打撃に強いが炎に弱い。撃破時に炉研ぎ素材を落としやすく、探索隊の補給対象として知られる。</p>
+</div>
+<h2 id="rune_carcinos">ルーンカルキノス<a class="headerlink" href="#rune_carcinos" title="Permanent link">&para;</a></h2>
+<p><img src="../../assets/monsters/ART_ENM_RuneCarcinos.png" alt="ルーンカルキノス" width="280"></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>通常</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>甲殻類</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★★★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>784</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>112</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>112</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>0.88</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>炎</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>闇</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>ルーン装甲展開 / 符爪挟み</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>25%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>13</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>46</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>囁きの森・林床の水辺</td>
+</tr>
+<tr>
+<td>群れ</td>
+<td>2〜4 体</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>蟹を祖先とし、甲羅に古代文字状の刻印を持つ大型個体。林床の浅い水流を移動し、刻印は遺構の古代文字を取り込んだ析出模様とされる。硬い甲羅で正面の打撃を凌ぎ、水辺では動きが鈍くなる。</p>
+</div>
+<h2 id="rune_roach">ルーンローチ<a class="headerlink" href="#rune_roach" title="Permanent link">&para;</a></h2>
+<p><img src="../../assets/monsters/ART_ENM_RuneRoach.png" alt="ルーンローチ" width="280"></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>通常</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>昆虫類</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>688</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>80</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>64</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>0.9</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>炎</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>闇</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>ルーン装甲展開 / ルーン酸</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>20%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>12</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>20</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>王墓の回廊</td>
+</tr>
+<tr>
+<td>群れ</td>
+<td>2〜3 体</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>ゴキブリの類を祖先とする。王墓の回廊に堆積したインク鉱物を取り込み、甲殻表面に古代文字に似た結晶模様が析出する。これを「ルーン」と呼ぶ者もいるが、意味を持つ文字とは限らず、ただの析出模様にすぎない。硬い外殻で正面からの打撃を凌ぐが、動きは鈍い。もっとも、析出した模様がまれに未解読の古代文字と一致する例があり、記録部はその一致を偶然と片付けかねている。</p>
+</div>
+<p><strong>関連素材:</strong> 遺跡の結晶 / 蒼古の骨鉱</p>
+<h2 id="samurai_fish">ロイヤルシャーク<a class="headerlink" href="#samurai_fish" title="Permanent link">&para;</a></h2>
+<p><img src="../../assets/monsters/ART_ENM_SamuraiFish.png" alt="ロイヤルシャーク" width="280"></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>通常</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>魚類</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★★★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>672</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>160</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>56</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>1.05</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>聖</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>—</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>潮穿ち / 鰭刃一閃</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>25%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>17</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>64</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>沈没航路・潮境</td>
+</tr>
+<tr>
+<td>群れ</td>
+<td>2〜3 体</td>
+</tr>
+<tr>
+<td>被弾時付与</td>
+<td>mark (25%)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>カジキマグロを祖先とし、槍のような吻で獲物を貫く突進型。潮境を統べるような気位と、狙いを定めた獲物から離れない執拗さから、探索者が「ロイヤルシャーク」と呼ぶ。</p>
+</div>
+<h2 id="sepia_hound">セピアハウンド<a class="headerlink" href="#sepia_hound" title="Permanent link">&para;</a></h2>
+<p><img src="../../assets/monsters/ART_ENM_SepiaHound.png" alt="セピアハウンド" width="280"></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>通常</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>獣類</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>520</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>96</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>32</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>1.1</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>5%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>闇</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>—</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>追憶の遠吠え / 記憶の牙</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>22%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>10</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>22</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>崩れた地下水路</td>
+</tr>
+<tr>
+<td>群れ</td>
+<td>2〜4 体</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>イヌ科を祖先とし、光の乏しい地下で嗅覚が極度に発達した個体。遺物に染みついた人の痕跡——古い手の脂や香の残り——を選り好んで追うため、探索者は「古い記憶を嗅ぐ犬」と呼ぶ。群れで縄張りを巡回し、侵入を察すると複数で追い詰める。火と明かりを嫌う。ごくまれに、人の手を離れて久しい遺物にだけ執着する個体が記録されるが、何の匂いを追っているのかは分かっていない。</p>
+</div>
+<p><strong>関連素材:</strong> 遺跡の結晶 / 蒼古の骨鉱</p>
+<h2 id="serdion">水晶骸竜 セルディオン<a class="headerlink" href="#serdion" title="Permanent link">&para;</a></h2>
+<p><img src="../../assets/monsters/ART_BOSS_Serdion.png" alt="水晶骸竜 セルディオン" width="280"></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>ボス</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>古代種</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>2000</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>120</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>160</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>電気 / 闇</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>—</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>激昂 / 断罪の波動 / 骸晶の咆哮</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>40%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>150</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>190</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>王座の深淵</td>
+</tr>
+<tr>
+<td>被弾時付与</td>
+<td>bleed (20%)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>死した古龍種（大型飛行爬虫類）の骨格に、鉱物へ擬態する寄生性の結晶生命が群体化した複合生命体。骨は支持構造にすぎず、捕食も移動も寄生した水晶側が担う。骨だけの姿だが不死者ではない。放電と瘴気に弱く、結晶核が乱れると群体の協調が崩れる。討伐例はごく少数。骨格は王国時代から姿を変えぬ古龍種のものとされ、竜と距離を見出したという古い伝承の真偽を確かめる手がかりとして記録部が注視している。</p>
+</div>
+<p><strong>関連素材:</strong> 遺跡の結晶 / 王墓の欠片</p>
+<h2 id="shadow_stalker">影狩り<a class="headerlink" href="#shadow_stalker" title="Permanent link">&para;</a></h2>
+<p><img src="../../assets/monsters/ART_ENM_ShadowStalker.png" alt="影狩り" width="280"></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>通常</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>獣類</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>2270</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>330</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>188</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>1.2</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>18%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>聖</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>闇</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>死告の鎌</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>50%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>140</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>150</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>宵闇の獣道（遍在）</td>
+</tr>
+<tr>
+<td>被弾時付与</td>
+<td>slow (40%)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>薄暮と霧の境界を好み、探索隊の後列を狙う大型の夜行適応獣。害意は明確で、羽音が聞こえた時点で後衛はすでに標的になっている。倒すと獲物から剥ぎ取った武具や蓄えを落とす。遭遇そのものが危険だが、撃破報酬は遍在希少種のなかでも厚い。ジョブ名の影狩人とは無関係の野生種。</p>
+</div>
+<h2 id="ship_eater_crab">船喰らい<a class="headerlink" href="#ship_eater_crab" title="Permanent link">&para;</a></h2>
+<p><img src="../../assets/monsters/ART_ENM_ShipEaterCrab.png" alt="船喰らい" width="280"></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>通常</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>甲殻類</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★★★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>608</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>128</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>72</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>1.1</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>5%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>氷</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>—</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>船体砕き / 船鋏薙ぎ</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>26%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>15</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>58</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>沈没航路・座礁船団</td>
+</tr>
+<tr>
+<td>群れ</td>
+<td>2〜4 体</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>蟹を祖先とし、座礁船の船体を齧って巣穴にする潮間帯の蟹。塩に灼けた鋏は船釘ごと木材を断つ。群れが通った船骨は一晩で骨組みだけになる。</p>
+</div>
+<h2 id="skarpedion">鉄殻の長スカルペディオン<a class="headerlink" href="#skarpedion" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>ボス</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>古代種</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>2560</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>152</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>192</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>0.9</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>電気 / 聖</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>炎</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>激昂 / 殻角突進 / 鉄殻脱皮</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>40%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>175</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>250</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>レッドリッジ廃坑</td>
+</tr>
+<tr>
+<td>被弾時付与</td>
+<td>bleed (20%)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>鉄殻虫を祖先とする古代型の長大個体。酸素欠乏の廃坑で殻が金属化し、斬撃で装甲を剥がす。鉄殻の長の名は坑夫の俗称であり、王との関わりはない。不死者ではない。</p>
+</div>
+<h2 id="skull_turtle">スカルタートル<a class="headerlink" href="#skull_turtle" title="Permanent link">&para;</a></h2>
+<p><img src="../../assets/monsters/ART_ENM_SkullTurtle.png" alt="スカルタートル" width="280"></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>通常</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>爬虫類</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★★★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>952</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>104</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>144</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>0.85</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>5%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>氷</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>—</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>骨殻硬化 / 髑髏打ち</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>22%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>16</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>60</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>沈没航路・干潟</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>亀を祖先とし、沈没船の白骨に擬態した硬甲の亀。甲羅には塩結晶と藤壺が析出し、並の刃を弾く。動かぬ骨だと思って踏んだ探索者の記録が複数残る。</p>
+</div>
+<h2 id="skullface_mantis">骸面マンティス<a class="headerlink" href="#skullface_mantis" title="Permanent link">&para;</a></h2>
+<p><img src="../../assets/monsters/ART_ENM_SkullfaceMantis.png" alt="骸面マンティス" width="280"></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>通常</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>昆虫類</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★★★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>592</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>128</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>48</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>1.05</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>炎</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>—</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>骸面斬り</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>28%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>13</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>40</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>王座の深淵連絡路</td>
+</tr>
+<tr>
+<td>群れ</td>
+<td>2〜4 体</td>
+</tr>
+<tr>
+<td>被弾時付与</td>
+<td>bleed (22%)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>カマキリを祖先とし、霊廟の湿気に適応した大型捕食者。脱皮殻の胸板模様が人の顔に似るため「骸面」と呼ばれる。新しい殻を被るたび模様が変わり、古い殻は祭礼の廃材として通路に積まれる。後列を狙い、鎌の一振りで致命傷を与える。火を嫌うが、炎の光に引き寄せられる個体も記録されている。</p>
+</div>
+<p><strong>関連素材:</strong> 遺跡の結晶 / 蒼古の骨鉱</p>
+<h2 id="spore_needle_wasp">胞針ワスプ<a class="headerlink" href="#spore_needle_wasp" title="Permanent link">&para;</a></h2>
+<p><img src="../../assets/monsters/ART_ENM_SporeNeedleWasp.png" alt="胞針ワスプ" width="280"></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>通常</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>昆虫類</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★★★★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>544</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>160</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>40</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>1.15</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>電気 / 炎</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>—</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>胞針連射 / 胞針の群れ</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>28%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>14</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>52</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>霧沼・瘴胞の樹冠</td>
+</tr>
+<tr>
+<td>被弾時付与</td>
+<td>poison (30%)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>蜂を祖先とし、産卵管に共生胞子を蓄えた巨大種。刺突で胞子を注入し、宿主の体液を菌糸の苗床にする。後列の術者を選んで急襲する記録が多い。</p>
+</div>
+<h2 id="spore_widow">スポアウィドウ<a class="headerlink" href="#spore_widow" title="Permanent link">&para;</a></h2>
+<p><img src="../../assets/monsters/ART_ENM_SporeWidow.png" alt="スポアウィドウ" width="280"></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>通常</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>昆虫類</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★★★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>520</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>136</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>32</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>1.1</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>8%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>聖</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>—</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>胞子の巣 / 胞子霞</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>26%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>12</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>44</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>囁きの森・樹冠</td>
+</tr>
+<tr>
+<td>群れ</td>
+<td>2〜3 体</td>
+</tr>
+<tr>
+<td>被弾時付与</td>
+<td>poison (20%)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>蜘蛛を祖先とし、腹部に共生菌の子実体を育てる捕食種。糸に胞子を絡ませて風に流し、吸い込んだ獲物が弱るのを待って仕留める。後衛を狙う狡猾さが記録されている。</p>
+</div>
+<h2 id="storm_joe">ストームジョー<a class="headerlink" href="#storm_joe" title="Permanent link">&para;</a></h2>
+<p><img src="../../assets/monsters/ART_ENM_StormJoe.png" alt="ストームジョー" width="280"></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>通常</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>爬虫類</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★★★★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>720</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>152</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>72</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>電気</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>—</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>吹雪の咆哮 / 嵐切り</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>22%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>20</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>74</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>最果て氷裂・氷河縁</td>
+</tr>
+<tr>
+<td>群れ</td>
+<td>2〜4 体</td>
+</tr>
+<tr>
+<td>被弾時付与</td>
+<td>chill (20%)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>中型恐竜を祖先とし、吹雪の中を真っ直ぐに突進する。視界の利かない白闇で正確に獲物へ届く理由は、雪面の振動を顎で読むためだと考えられている。</p>
+</div>
+<h2 id="tide_lamp">潮灯<a class="headerlink" href="#tide_lamp" title="Permanent link">&para;</a></h2>
+<p><img src="../../assets/monsters/ART_ENM_TideLamp.png" alt="潮灯" width="280"></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>通常</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>刺胞類</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★★★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>464</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>128</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>32</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>0.95</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>5%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>聖</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>—</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>潮灯の冷光 / 潮灯閃き</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>26%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>15</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>58</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>沈没航路・夜の干潟</td>
+</tr>
+<tr>
+<td>群れ</td>
+<td>2〜3 体</td>
+</tr>
+<tr>
+<td>被弾時付与</td>
+<td>chill (30%)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>クラゲを祖先とし、傘が青白く生物発光する潮間帯種。夜の干潟を迷う探索者を灯のように誘い、触手の冷気で動きを奪う。灯台の導きではない、と記録部は注記する。</p>
+</div>
+<h2 id="undertaker_shark">アンダーテイカー<a class="headerlink" href="#undertaker_shark" title="Permanent link">&para;</a></h2>
+<p><img src="../../assets/monsters/ART_ENM_UndertakerShark.png" alt="アンダーテイカー" width="280"></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>通常</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>魚類</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★★★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>544</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>152</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>40</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>1.15</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>聖</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>—</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>潮穿ち / 引き潮</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>22%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>16</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>62</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>沈没航路・浅瀬</td>
+</tr>
+<tr>
+<td>群れ</td>
+<td>2〜3 体</td>
+</tr>
+<tr>
+<td>被弾時付与</td>
+<td>bleed (25%)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>サメを祖先とし、干潟のわずかな水深を滑るように進む小型ザメ。弱った獲物を選んで襲う習性から、船乗りは葬儀屋と呼んで忌んだ。</p>
+</div>
+<h2 id="valgard">境界の番ヴァルガード<a class="headerlink" href="#valgard" title="Permanent link">&para;</a></h2>
+<p><img src="../../assets/monsters/ART_BOSS_Valgard.png" alt="境界の番ヴァルガード" width="280"></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>ボス</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>古代種</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★★★★★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>3600</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>210</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>220</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>0.9</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>聖 / 電気</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>闇</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>激昂 / 城壁機関 / 界壁衝角</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>40%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>210</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>300</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>ストームクラウン境界廊</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>境界遺構の岩鉄と城壁残滓が鉱物化適応し、巨大な機械式ゴーレムのように見える擬機械体。歯車と槍状突起で侵入者を押し返す。境界の番の名は民間が付けた通称で、守護王そのものではない。魔法人形でも不死者でもない。</p>
+</div>
+<h2 id="vergaron">ヴェルガロン<a class="headerlink" href="#vergaron" title="Permanent link">&para;</a></h2>
+<p><img src="../../assets/monsters/ART_ENM_Vergaron.png" alt="ヴェルガロン" width="280"></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>通常</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>獣類</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★★★★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>624</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>136</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>56</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>1.1</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>炎</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>—</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>吹雪の咆哮 / 凍牙</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>30%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>19</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>72</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>最果て氷裂・吹雪帯</td>
+</tr>
+<tr>
+<td>群れ</td>
+<td>2〜3 体</td>
+</tr>
+<tr>
+<td>被弾時付与</td>
+<td>chill (25%)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>狼を祖先とし、極寒の風を厚毛に纏って狩る大型狼。吐息が獲物の体温を奪い、動きが鈍ったところを群れが仕留める。遠吠えは吹雪の夜にだけ聞こえる。</p>
+</div>
+<h2 id="wind_ripper">スノーストーム<a class="headerlink" href="#wind_ripper" title="Permanent link">&para;</a></h2>
+<p><img src="../../assets/monsters/ART_ENM_WindRipper.png" alt="スノーストーム" width="280"></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>種別</td>
+<td>通常</td>
+</tr>
+<tr>
+<td>分類</td>
+<td>鳥類</td>
+</tr>
+<tr>
+<td>危険度</td>
+<td>★★★★</td>
+</tr>
+<tr>
+<td>HP</td>
+<td>560</td>
+</tr>
+<tr>
+<td>攻撃力</td>
+<td>160</td>
+</tr>
+<tr>
+<td>防御力</td>
+<td>48</td>
+</tr>
+<tr>
+<td>攻撃速度</td>
+<td>1.2</td>
+</tr>
+<tr>
+<td>クリティカル率</td>
+<td>12%</td>
+</tr>
+<tr>
+<td>弱点属性</td>
+<td>電気</td>
+</tr>
+<tr>
+<td>耐性属性</td>
+<td>—</td>
+</tr>
+<tr>
+<td>スキル</td>
+<td>凍霧の吐息 / 風裂き</td>
+</tr>
+<tr>
+<td>スキル使用率</td>
+<td>32%</td>
+</tr>
+<tr>
+<td>経験値</td>
+<td>19</td>
+</tr>
+<tr>
+<td>ゴールド</td>
+<td>72</td>
+</tr>
+<tr>
+<td>生息地</td>
+<td>最果て氷裂・吹雪帯</td>
+</tr>
+<tr>
+<td>群れ</td>
+<td>2〜3 体</td>
+</tr>
+<tr>
+<td>被弾時付与</td>
+<td>chill (25%)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">調査記録</p>
+<p>猛禽を祖先とし、翼で真空の刃を起こす高空種。吹雪の筋に乗り、後列を切り裂いて去る。姿より先に風の裂け目が来る、と報告される。</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  ページトップへ戻る
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/crownfall-game" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="/" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 16 3 5l5.5 5L12 4l3.5 6L21 5l-2 11zm14 3c0 .6-.4 1-1 1H6c-.6 0-1-.4-1-1v-1h14z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.top", "navigation.indexes", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
